@@ -16,4 +16,11 @@ def caesar(text, shift, encrypt=True):
     encrypted_text = text.translate(translation_table)
     return encrypted_text
 
+def encrypt(text, shift):
+    return caesar(text, shift)
+
+def decrypt(text, shift):
+    return caesar(text, shift, False)
+
+
 
